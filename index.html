@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小王子十岁生日邀请函</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* 背景粉色 */
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px; /* 手机屏幕宽度限制 */
+            background-image: linear-gradient(to bottom, #fff0f5, #ffffff);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 50px;
+            overflow: hidden;
+        }
+        .header-img {
+            width: 100%;
+            height: auto;
+            border-bottom-left-radius: 50% 20px;
+            border-bottom-right-radius: 50% 20px;
+        }
+        .title {
+            color: #ec407a;
+            font-size: 24px;
+            margin-top: 30px;
+            font-weight: bold;
+            animation: fadeInUp 1.5s ease;
+        }
+        .subtitle {
+            color: #f48fb1;
+            font-size: 16px;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+        .content-box {
+            padding: 20px;
+            line-height: 1.8;
+            color: #555;
+            animation: fadeInUp 2s ease;
+        }
+        .photo-frame {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(236, 64, 122, 0.2);
+            border-radius: 50%; /* 圆形头像 */
+            overflow: hidden;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info-card {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px dashed #f8bbd0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ec407a;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(236, 64, 122, 0.4);
+        }
+        /* 简单的淡入动画 */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1530103862676-de3c9da59af7?q=80&w=1000&auto=format&fit=crop" class="header-img" alt="Header">
+
+        <h1 class="title">我们要10岁啦！</h1>
+        <p class="subtitle">TEN YEARS OLD BIRTHDAY</p>
+
+        <div class="photo-frame">
+            <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?q=80&w=800&auto=format&fit=crop" alt="宝宝照片">
+        </div>
+
+        <div class="content-box">
+            <p>家有小儿初长成</p>
+            <p>感谢您一路的关爱与陪伴</p>
+            <p>在这个特别的日子里</p>
+            <p>诚挚邀请您参加</p>
+            <p><b>[包恩恺]</b> 的十岁生日宴</p>
+        </div>
+
+        <div class="info-card">
+            <p>📅 <b>时间：</b>2026年1月25日 11:30</p>
+            <p>📍 <b>地点：</b>京城豪苑8号楼</p>
+            <p>宴会厅：玺筵餐厅</p>
+        </div>
+
+        <a href="https://map.baidu.com/search/京城豪苑8号楼" class="btn">查看地图导航</a>
+    </div>
+
+</body>
+</html>
